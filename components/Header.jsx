@@ -1,9 +1,19 @@
-import { useState } from 'react'
+import { useEffect, useRef } from 'react'
 import MenuButton from './particles/MenuButton.jsx'
 import LogInButton from './particles/LogInButton.jsx'
 import Logo from './particles/Logo.jsx'
 
-function Header() {
+function Header( {onLoadComplete} ) {
+
+  const calledRef = useRef(false) //Solución con useRef para repeticiónes por StrictMode
+
+  useEffect(() => {
+      if (!calledRef.current) {
+        onLoadComplete();
+        calledRef.current = true;
+      }
+    }, [onLoadComplete])
+  
 
   return (
     <>

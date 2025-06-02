@@ -7,7 +7,7 @@ const Vehicle = () => {
       className="z-10 flex justify-center items-center w-screen h-100"
       initial={{opacity: 0}}
       animate={{opacity: [0, 0, 1]}}
-      transition={{ duration: 6 }}
+      transition={{ duration: 2 }}
     >
       <motion.div //SOMBRA
         className='absolute h-9 w-20 mt-44 rounded-xl bg-[#222]'

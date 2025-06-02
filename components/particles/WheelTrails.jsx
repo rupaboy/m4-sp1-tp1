@@ -39,7 +39,7 @@ const WheelTrails = () => {
     <div className="absolute h-100 w-screen overflow-hidden">
       <motion.div
         className="absolute w-full h-full flex justify-center items-end"
-        transition={{ duration: 25 }}
+        transition={{ duration: 2 }}
         initial={{opacity: 0}}
         animate={{ opacity: [0, 1, 1] }}
       >
@@ -55,15 +55,14 @@ const WheelTrails = () => {
             animate={{
               width: 0, // Ancho se reduce a 0
               y: track.height - 180,
-              height: track.height - 1, // Mantiene la altura original
-              opacity: 1, // Se desvanece
+              height: track.height - 1, // Reduce la altura original
+              opacity: 1, // Se aparece
             }}
             transition={{
               duration: 7, // Duración de la animación
               ease: "easeInOut",
             }}
-            className="absolute bg-white rounded-t-full"
-            //className="absolute border-l-2 border-r-2 bg-[#222] border-gray-400 rounded-t-full"
+            className="absolute bg-[#EEE] rounded-t-4xl"
           />
         ))}
       </motion.div>

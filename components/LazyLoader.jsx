@@ -14,12 +14,12 @@ const LazyLoader = () => {
         <WheelTrails />
         <LoadingText />
         <Vehicle />
-        <motion.div
+        <motion.div //Inicia Logo primero que todo lo demás. Aquí se describen las transiciones del logo.
         initial={{opacity: 0}}
         animate={{opacity: 1}}
         transition={{duration: 0.5}}>
           <Logo
-          className='w-full text-center font-permanent-marker bottom-[1em] text-[3em] text-white border-t'
+          className='w-full text-center font-permanent-marker bottom-[1em] text-[3em] text-white border-t-2'
           />
         </motion.div>
         

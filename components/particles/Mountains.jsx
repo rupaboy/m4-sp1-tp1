@@ -9,7 +9,7 @@ const Mountains = () => {
           className='h-100 w-4000'
           initial={{opacity: 0}}
           animate={{opacity: [0, 0, 1]}}
-          transition={{ duration: 12, ease: "easeOut" }}
+          transition={{ duration: 7, ease: "easeOut" }}
           >
           <motion.svg
             initial={{x: 0}}
@@ -52,9 +52,9 @@ const Mountains = () => {
                 L2880,240
                 L0,240
                 Z"
-              fill="#EEE" // Color de rocas
-              stroke='#222'
-              strokeWidth={3}
+              fill="#222" // Color de rocas
+              stroke='#EEE'
+              strokeWidth={1}
             />
           </motion.svg>
       </motion.div>
