@@ -9,7 +9,7 @@ function Featured(toFeatured) {
 
 
   return (
-    <div className='flex md:flex-col'>
+    <div className='flex md:flex-col justify-center flex-wrap transform scale-75 sm:scale-100'>
       {toFeatured.toFeatured.map((item, index) => {
         const rotation = Math.random() * -5 - 1; // Generar rotación para cada card
 

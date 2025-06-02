@@ -11,7 +11,10 @@ const Navigation = ({ onLoadComplete }) => {
     const getFeatured = (province) => {
         // Obtener las claves del objeto tourismDestinations
         const keys = Object.keys(tourismDestinations);
-        const featuredPlaces = tourismDestinations[province]
+        const featuredPlaces = tourismDestinations[province].slice(-3) //Limita a 3 últimos elementos del array
+
+        //console.log(featuredPlaces)
+
 
         // Verificar si el id de la provincia existe en las claves
         if (keys.includes(province)) {
@@ -36,13 +39,15 @@ const Navigation = ({ onLoadComplete }) => {
 
 
     return (
-        <div className='grid pt-20 grid-cols-1 md:grid-cols-5 gap-2'>
+        <div className='w-screen overflow-hidden md:flex pt-20 items-center justify-around'>
 
-            {isSelected && <Featured toFeatured={toFeatured} />}
+            <div
+            className='flex items-start justify-center'
+            >
+                {isSelected && <Featured toFeatured={toFeatured} />}
+            </div>
 
-
-            <Argentina getFeatured={getFeatured} />
-
+        <Argentina getFeatured={getFeatured} />
 
         </div>
     )
