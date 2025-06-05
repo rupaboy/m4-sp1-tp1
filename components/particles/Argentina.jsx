@@ -11,7 +11,7 @@ const Argentina = ({ getFeatured }) => {
 
     return (
         <motion.svg
-            className='transform scale-110 sm:scale-120 lg:scale-150 xl:scale-180'
+            className='transform scale-110 sm:scale-120 lg:scale-150 xl:scale-200'
             xmlSpace="preserve"
             width={720} height={300}
             style={{overflow: "hidden", maxWidth: "100%", height: "auto"}}

@@ -39,10 +39,10 @@ const Navigation = ({ onLoadComplete }) => {
 
 
     return (
-        <div className='w-screen overflow-hidden md:flex pt-20 items-center justify-around'>
+        <div className='overflow-hidden w-screen pt-13 md:flex md:items-center h-screen justify-around'>
 
             <div
-            className='flex items-start justify-center'
+            className='flex pt-[6%] justify-center'
             >
                 {isSelected && <Featured toFeatured={toFeatured} />}
             </div>
