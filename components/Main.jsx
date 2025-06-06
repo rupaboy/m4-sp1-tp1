@@ -20,8 +20,14 @@ const Main = () => {
 
     //Cada vez que se carga un componente.
     console.log(`Componentes Cargados: ${loadedComponents}, totalComponents: ${totalComponents}`)
-    if (loadedComponents >= totalComponents) {
-      setIsContentLoaded(true);
+    if (loadedComponents === totalComponents) {
+
+              setTimeout(()=>{
+
+                setIsContentLoaded(true);
+
+              }, 10000)
+      
     } // El límite es totalComponents. Establece IsContentLoaded
   }, [loadedComponents, totalComponents]);
 
@@ -35,7 +41,9 @@ const Main = () => {
           animate={{ opacity: isContentLoaded ? 0 : 1 }} //¿Está todo cargado?
           transition={{ duration: 1 }}
           onAnimationComplete={() => {
-            if (isContentLoaded) setLoader(false); //Desmontar el lazyLoader
+            if (isContentLoaded) {
+              setLoader(false);
+            } //Desmontar el lazyLoader
           }}
         > <LazyLoader />
         </motion.div>

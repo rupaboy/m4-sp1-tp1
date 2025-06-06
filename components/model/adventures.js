@@ -33,8 +33,8 @@ export const tourismDestinations = {
         {
             title: 'Mar del Plata',
             province: 'Buenos Aires',
-            imgLink: 'Playa Chica',
-            imgDescription: 'https://photo620x400.mnstatic.com/ac0e3290dd4ee6082c8175f618a149df/playa-chica.jpg',
+            imgLink: 'https://insidemdp.com.ar/wp-content/uploads/2022/11/playa-chica-mar-del-plata.jpg',
+            imgDescription: 'Playa Chica',
             description: 'surf, offroad, turismo costero',
         },
         {
@@ -174,7 +174,7 @@ export const tourismDestinations = {
         {
             title: 'Tolhuin',
             province: 'Tierra del Fuego',
-            imgLink: 'https://cheargentinatravel.com/wp-content/uploads/2023/03/Hosteria-Kaiken-Tolhuin-Tierra-del-Fuego-Argentina-1024x577.jpg',
+            imgLink: 'https://www.welcomeargentina.com/paseos/city-tour-tolhuin/tolhuin-tierra-del-fuego-4.jpg',
             imgDescription: 'Kaiken Tolhuin',
             description: 'senderismo, vistas panorámicas, naturaleza',
         },
@@ -411,8 +411,8 @@ export const tourismDestinations = {
         {
             title: 'Formosa Capital',
             province: 'Formosa',
-            imgLink: '',
-            imgDescription: '',
+            imgLink: 'https://i.pinimg.com/736x/c1/df/76/c1df76d69efca1cdedb0bcfb6cd7a715.jpg',
+            imgDescription: 'Costaneda formoseña',
             description: 'navegación, cultura, turismo urbano',
         },
         {
@@ -520,22 +520,22 @@ export const tourismDestinations = {
         {
             title: 'Parque Luro',
             province: 'La Pampa',
-            imgLink: '',
-            imgDescription: '',
+            imgLink: 'https://voydeviaje.lavoz.com.ar/resizer/MTDBew6s_ahFVuagp3oGONw1-_8=/0x0:0x0/980x640/filters:quality(80):format(webp)/cloudfront-us-east-1.images.arcpublishing.com/grupoclarin/XC74B4POFZAQVLYKFPY4TWKK5A.jpg',
+            imgDescription: 'Parque Nacional de Luro',
             description: 'avistaje de fauna, senderismo, turismo rural',
         },
         {
             title: 'Santa Rosa',
             province: 'La Pampa',
-            imgLink: '',
-            imgDescription: '',
+            imgLink: 'https://www.welcomeargentina.com/paseos/ciudad_srosa/santa-rosa-1.jpg',
+            imgDescription: 'Club Guardia del Monte',
             description: 'pesca, turismo urbano, naturaleza',
         },
         {
             title: 'General Acha',
             province: 'La Pampa',
-            imgLink: '',
-            imgDescription: '',
+            imgLink: 'https://dynamic-media-cdn.tripadvisor.com/media/photo-o/05/27/41/30/posada-san-antonio-de.jpg',
+            imgDescription: 'Estancias en General Acha',
             description: 'senderismo, cultura, paisajes áridos',
         },
     ],

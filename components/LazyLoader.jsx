@@ -22,9 +22,6 @@ const LazyLoader = () => {
           className='w-full text-center font-permanent-marker bottom-[1em] text-[3em] text-white border-t-2'
           />
         </motion.div>
-        
-            
-          
     </>
   )
 }
